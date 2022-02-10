@@ -1,0 +1,30 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{"YUIKCA":30}'}
+components:
+- type: ColumnPanel
+  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: never, col_spacing: medium, spacing_above: small, col_widths: '{}', spacing_below: small,
+    background: ''}
+  name: column_panel_1
+  layout_properties: {grid_position: 'EWAUJP,YUIKCA'}
+  components:
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: 12, font: '', spacing_above: none, icon_align: left,
+      spacing_below: none, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_1
+    layout_properties: {grid_position: 'ZPVVAH,WCGRVY'}
+    data_bindings:
+    - {property: text, code: 'self.item[''price'']'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: 12, font: '', spacing_above: none, icon_align: left,
+      spacing_below: none, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'ZPVVAH,DEIJQO'}
+    data_bindings:
+    - {property: text, code: 'self.item[''rtb'']'}
+is_package: true

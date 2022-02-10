@@ -1,0 +1,51 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{"SSUYOT":20,"GMFDHP":41,"IRQGPQ":20}'}
+components:
+- type: Label
+  properties: {}
+  name: market_pair
+  layout_properties: {grid_position: 'QZRQKC,DXMZAC'}
+  data_bindings:
+  - {property: text, code: 'f"{self.item[''asset1_code'']} / {self.item[''asset2_code'']}"'}
+- type: Label
+  properties: {}
+  name: label_2
+  layout_properties: {grid_position: 'QZRQKC,YFINND'}
+  data_bindings:
+  - {property: text, code: 'self.item[''daily_amm_reward'']'}
+- type: Label
+  properties: {}
+  name: label_3
+  layout_properties: {grid_position: 'QZRQKC,QXQDQG'}
+  data_bindings:
+  - {property: text, code: self.item.get('calculated_value_hourly')}
+- type: Label
+  properties: {}
+  name: label_4
+  layout_properties: {grid_position: 'QZRQKC,SUNBFQ'}
+  data_bindings:
+  - {property: text, code: self.item.get('calculated_value')}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: '', font_size: 10, font: '', spacing_above: none, icon_align: left, spacing_below: small,
+    italic: false, background: '', bold: false, underline: false, icon: ''}
+  name: label_5
+  layout_properties: {grid_position: 'UEKZCF,SSUYOT'}
+  data_bindings:
+  - {property: text, code: 'f"{self.item[''price1'']}USD / {self.item[''price2'']}USD"'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: '', font_size: 10, font: '', spacing_above: none, icon_align: left, spacing_below: small,
+    italic: false, background: '', bold: false, underline: false, icon: ''}
+  name: label_5_copy
+  layout_properties:
+    col_widths: {}
+    grid_position: UEKZCF,IRQGPQ
+  data_bindings:
+  - {property: text, code: 'f"{self.item[''investment1'']} / {self.item[''investment2'']}{self.item[''asset2'']}"'}
+- type: Spacer
+  properties: {height: 15}
+  name: spacer_1
+  layout_properties: {grid_position: 'UEKZCF,GMFDHP'}
+is_package: true

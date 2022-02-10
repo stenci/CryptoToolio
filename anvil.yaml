@@ -1,0 +1,42 @@
+scheduled_tasks: null
+dependencies: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+startup: {type: form, module: LandingPage}
+package_name: Material_Design_1
+allow_embedding: false
+name: Clone of Updated_Clone_CryptoToolio v5 (4)
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox}
+startup_form: null
+db_schema:
+  rows:
+    title: Rows
+    client: none
+    server: full
+    columns:
+    - name: session_id
+      admin_ui: {width: 200}
+      type: string
+    - name: details
+      admin_ui: {width: 340}
+      type: simpleObject
+  taskids:
+    title: TaskIds
+    client: none
+    server: full
+    columns:
+    - name: session_id
+      admin_ui: {width: 200}
+      type: string
+    - name: task_id
+      admin_ui: {width: 200}
+      type: string
+    - name: n_last_row
+      admin_ui: {width: 200}
+      type: number
+    - name: rows
+      admin_ui: {width: 200}
+      type: simpleObject
+renamed: true

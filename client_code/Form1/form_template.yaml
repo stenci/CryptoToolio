@@ -1,0 +1,18 @@
+container:
+  type: HtmlTemplate
+  properties: {tooltip: '', background: '', foreground: '', border: '', visible: true,
+    role: null, html: "<center style=\"font-style:italic; color:#888; margin: 3em;\"\
+      >\n  <!-- TradingView Widget BEGIN -->\n<div class=\"tradingview-widget-container\"\
+      >\n  <div id=\"tradingview_fd57f\"></div>\n  <div class=\"tradingview-widget-copyright\"\
+      ><a href=\"https://www.tradingview.com/symbols/XLMUSD/?exchange=COINBASE\" rel=\"\
+      noopener\" target=\"_blank\"><span class=\"blue-text\">XLMUSD Chart</span></a>\
+      \ by TradingView</div>\n  <script type=\"text/javascript\" src=\"https://s3.tradingview.com/tv.js\"\
+      ></script>\n  <script type=\"text/javascript\">\n  new TradingView.widget(\n\
+      \  {\n  \"width\": 700,\n  \"height\": 500,\n  \"symbol\": \"COINBASE:XLMUSD\"\
+      ,\n  \"interval\": \"15\",\n  \"timezone\": \"Etc/UTC\",\n  \"theme\": \"dark\"\
+      ,\n  \"style\": \"1\",\n  \"locale\": \"en\",\n  \"toolbar_bg\": \"#f1f3f6\"\
+      ,\n  \"enable_publishing\": false,\n  \"withdateranges\": true,\n  \"hide_side_toolbar\"\
+      : false,\n  \"allow_symbol_change\": true,\n  \"container_id\": \"tradingview_fd57f\"\
+      \n}\n  );\n  </script>\n</div>\n<!-- TradingView Widget END -->\n</center>"}
+components: []
+is_package: true
